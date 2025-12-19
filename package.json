@@ -1,0 +1,12 @@
+{
+  "name": "yew-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx tailwindcss -i src/styles/main.css -o ./styles/global.css --minify",
+    "watch": "yarn build --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
