@@ -1,6 +1,5 @@
 mod types;
 mod features;
-mod data;
 mod components;
 mod api;
 
@@ -8,7 +7,7 @@ use yew::{component, html, use_effect_with, use_state, Callback, Html};
 use yew::platform::spawn_local;
 use crate::api::fetch_videos;
 use crate::components::VideoDetails;
-use crate::features::VideoList;
+use crate::features::{VideoList};
 use crate::types::Video;
 
 #[component]
