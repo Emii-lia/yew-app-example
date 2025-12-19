@@ -9,6 +9,7 @@ pub struct Props {
 
 #[component]
 pub fn VideoList(Props { videos, on_click }: &Props) -> Html {
+
   let on_select = |video: &Video| {
     let on_click = on_click.clone();
     let video = video.clone();
@@ -18,9 +19,9 @@ pub fn VideoList(Props { videos, on_click }: &Props) -> Html {
   };
 
   html! {
-    <ul class="video-list">
+    <ul class="VideoList">
       { for videos.iter().map(|video| html! {
-        <li key={video.id} onclick={on_select(video)}>
+        <li key={video.id} onclick={on_select(video)} class="video-item">
           {format!("{} - {}", video.title, video.speaker)}
         </li>
       }) }

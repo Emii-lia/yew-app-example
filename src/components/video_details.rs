@@ -8,9 +8,9 @@ pub struct Props {
 #[component]
 pub fn VideoDetails(Props { video }: &Props) -> Html {
   html! {
-    <div>
-      <h2>{ &video.title }</h2>
-      <video controls={true} src={&video.url} />
+    <div class="VideoDetails">
+      <h2 class="video-title">{ &video.title }</h2>
+      <video controls={true} src={&video.url} class="video-player"/>
     </div>
   }
 }
