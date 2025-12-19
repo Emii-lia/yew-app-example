@@ -7,5 +7,3 @@ edition = "2024"
 yew = { git = "https://github.com/yewstack/yew/", features = ["csr", "serde"] }
 gloo-net = "0.6.0"
 serde = { version = "1.0.228", features = ["derive"] }
-wasm-bindgen-futures = "0.4.56"
-css-in-rust = { version = "^0.5.0", features = ["yew_integration"] }
